@@ -184,3 +184,6 @@
     animation: bounce-icon 2s ease-in-out infinite;
   }
 }
+
+/* smooth scroll */
+html { scroll-behavior: smooth; }
