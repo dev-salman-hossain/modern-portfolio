@@ -187,3 +187,6 @@
 
 /* smooth scroll */
 html { scroll-behavior: smooth; }
+
+/* hero gradient refinement */
+.hero-bg { background-blend-mode: overlay; }
