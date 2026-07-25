@@ -190,3 +190,6 @@ html { scroll-behavior: smooth; }
 
 /* hero gradient refinement */
 .hero-bg { background-blend-mode: overlay; }
+
+/* contact form fix */
+.contact-form { min-height: 0; }
