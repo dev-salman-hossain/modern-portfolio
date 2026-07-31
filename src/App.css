@@ -46,3 +46,6 @@
 
 /* scroll to top btn */
 .scroll-top { position: fixed; bottom: 2rem; right: 2rem; }
+
+/* footer fix sm */
+@media (max-width:480px) { .footer-links { flex-direction: column; } }
