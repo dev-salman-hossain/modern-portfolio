@@ -75,3 +75,5 @@ Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/c
 <!-- deps updated 2026-07-28 -->
 
 <!-- lazy loading enabled -->
+
+<!-- readme updated with setup steps -->
