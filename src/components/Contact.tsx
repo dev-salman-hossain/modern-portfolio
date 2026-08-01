@@ -5,8 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Mail, MapPin, Phone, Github, Linkedin, Facebook, Send } from "lucide-react";
 
 const Contact = () => {
-  const form = useRef();
-  const [isSent, setIsSent] = useState(false);
+  const form = useRef<HTMLFormElement>(null);
   const [sending, setSending] = useState(false);
 
   const sendEmail = (e) => {
@@ -22,11 +21,10 @@ const Contact = () => {
       )
       .then(
         () => {
-          setIsSent(true);
           setSending(false);
-          form.current.reset();
+          form.current?.reset();
           toast.success("I'll get back to you soon.", {
-            position:"bottom-right",
+            position: "bottom-right",
             autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -70,7 +68,7 @@ const Contact = () => {
   ];
 
   const socials = [
-    { icon: Github,   href: "https://github.com/Salman472" },
+    { icon: Github, href: "https://github.com/Salman472" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/salman2025/" },
     { icon: Facebook, href: "https://www.facebook.com/md.sayem.hossain.71778" },
   ];
@@ -168,7 +166,7 @@ const Contact = () => {
                 type="submit"
                 disabled={sending}
                 className=" w-full inline-flex justify-center items-center gap-2 px-6 py-3 rounded-lg font-medium text-primary-foreground text-center"
-              style={{ background: "var(--gradient-primary)" }}
+                style={{ background: "var(--gradient-primary)" }}
               >
                 {sending ? (
                   <>

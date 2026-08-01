@@ -4,11 +4,11 @@ import SectionHeading from "./SectionHeading";
 
 const timeline = [
   {
-   type: "learning",
-title: "Complete Web Development Course Batch-12",
-org: "Programming Hero",
-period: "June-2025",
-description: "Completed an intensive full-stack web development program at Programming Hero, focusing on building scalable applications with React and Node.js, and gaining hands-on experience with modern development workflows."
+    type: "learning",
+    title: "Complete Web Development Course Batch-12",
+    org: "Programming Hero",
+    period: "June-2025",
+    description: "Completed an intensive full-stack web development program at Programming Hero, focusing on building scalable applications with React and Node.js, and gaining hands-on experience with modern development workflows."
   },
   {
     type: "education",

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, FileDown } from "lucide-react";
 import { lazy, Suspense } from "react";
-import profileImg from "@/assets/profile.png";
+import profileImg from "@/assets/profile.webp";
 import ExpertAnimatedRole from "./ui/ExpertAnimatedRole";
 import cvFile from "@/assets/salman as a mern stack developer.pdf";
 
@@ -29,7 +29,7 @@ const Hero = () => {
       >
         <ThreeBackground />
       </Suspense>
-      <div className="container mx-auto px-4 md:px-8 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 relative z-10 pt-24 lg:pt-0">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
           {/* Left */}
           <div className="flex-1 text-center lg:text-left">

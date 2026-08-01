@@ -5,6 +5,7 @@ const CustomCursor = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
   const [cursorText, setCursorText] = useState("");
   const [isClicking, setIsClicking] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   // motion values
   const mouseX = useMotionValue(0);
@@ -15,6 +16,30 @@ const CustomCursor = () => {
   const y = useSpring(mouseY, springConfig);
 
   useEffect(() => {
+    const checkDevice = () => {
+      const isTouch = window.matchMedia("(pointer: coarse)").matches || window.innerWidth < 1024;
+      setIsVisible(!isTouch);
+    };
+
+    checkDevice();
+    window.addEventListener("resize", checkDevice);
+    return () => window.removeEventListener("resize", checkDevice);
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      document.body.classList.add("has-custom-cursor");
+    } else {
+      document.body.classList.remove("has-custom-cursor");
+    }
+    return () => {
+      document.body.classList.remove("has-custom-cursor");
+    };
+  }, [isVisible]);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
     const moveCursor = (e) => {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
@@ -68,7 +93,7 @@ const CustomCursor = () => {
       window.removeEventListener("mouseover", handleMouseOver);
       window.removeEventListener("mouseout", handleMouseLeave);
     };
-  }, [mouseX, mouseY]);
+  }, [mouseX, mouseY, isVisible]);
 
   // animation variants
   const variants = {
@@ -79,6 +104,8 @@ const CustomCursor = () => {
       scale: 1.15,
     },
   };
+
+  if (!isVisible) return null;
 
   return (
     <>

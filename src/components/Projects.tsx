@@ -2,12 +2,12 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, X } from "lucide-react";
 
-import project1 from "@/assets/project1.png";
-import project01 from "@/assets/project01.png";
-import project2 from "@/assets/project2.png";
-import project02 from "@/assets/project02.png";
-import project3 from "@/assets/project3.png";
-import project03 from "@/assets/project03.png";
+import project1 from "@/assets/project1.webp";
+import project01 from "@/assets/project01.webp";
+import project2 from "@/assets/project2.webp";
+import project02 from "@/assets/project02.webp";
+import project3 from "@/assets/project3.webp";
+import project03 from "@/assets/project03.webp";
 
 import ScrollReveal from "./ScrollReveal";
 import SectionHeading from "./SectionHeading";

@@ -81,7 +81,13 @@
   body {
     @apply bg-background text-foreground font-body antialiased;
     font-family: "Inter", sans-serif;
-    cursor: none;
+  }
+
+  @media (min-width: 1024px) {
+    body.has-custom-cursor,
+    body.has-custom-cursor * {
+      cursor: none !important;
+    }
   }
 
   /* Custom scrollbar */
