@@ -9,3 +9,5 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# cache optimized 2026-08-03
