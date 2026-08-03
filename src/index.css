@@ -196,3 +196,6 @@ html { scroll-behavior: smooth; }
 
 /* typography update */
 .body-text { font-weight: 400; line-height: 1.7; }
+
+/* cursor accessibility */
+@media (prefers-reduced-motion: reduce) { .cursor { display: none; } }
