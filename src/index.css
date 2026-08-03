@@ -199,3 +199,6 @@ html { scroll-behavior: smooth; }
 
 /* cursor accessibility */
 @media (prefers-reduced-motion: reduce) { .cursor { display: none; } }
+
+/* experience card shadow */
+.exp-card { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
