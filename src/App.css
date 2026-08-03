@@ -49,3 +49,6 @@
 
 /* footer fix sm */
 @media (max-width:480px) { .footer-links { flex-direction: column; } }
+
+/* about tablet fix */
+@media (max-width:768px) { .about-text { word-break: break-word; } }
