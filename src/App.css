@@ -52,3 +52,6 @@
 
 /* about tablet fix */
 @media (max-width:768px) { .about-text { word-break: break-word; } }
+
+/* active nav highlight */
+.nav-link.active { border-bottom: 2px solid var(--accent); }
