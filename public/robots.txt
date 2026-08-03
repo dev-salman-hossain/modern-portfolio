@@ -20,3 +20,5 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://md-salman-hossain.netlify.app/sitemap.xml
+
+# updated 2026-08-03
