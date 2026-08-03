@@ -204,3 +204,6 @@ html { scroll-behavior: smooth; }
 .exp-card { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
 
 /* cleanup pass 2026-08-03 */
+
+/* heading letter-spacing */
+.section-title { letter-spacing: 0.04em; }
